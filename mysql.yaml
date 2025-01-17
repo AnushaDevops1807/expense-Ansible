@@ -22,7 +22,7 @@
       state: started
       enabled: yes    
 
-  - name: connect to mysql server
+  - name: connect to mysql server    #Ansible community module to check whether root password is set or not based on connection success or not.
     community.mysql.mysql_info:
       login_user: root
       login_password: "{{ mysql_root_password }}"
